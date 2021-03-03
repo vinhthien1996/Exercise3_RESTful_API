@@ -44,7 +44,7 @@ public class StudentController {
 		JSONObject result = new JSONObject();
 		
 		if(st == null) {			
-			result.put("messsage", "Student ID is not exists.");
+			result.put("messsage", "Student ID already exists.");
 			code = 409;
 		} else {
 			result.put("result", st);
